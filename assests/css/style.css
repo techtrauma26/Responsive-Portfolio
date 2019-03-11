@@ -1,0 +1,331 @@
+body {
+  background-image: url("../images/Backgroud-pic.png");
+	background-repeat: repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #777;
+	line-height: 28px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main Page */
+
+/* Sticky Footer */
+
+#container {
+	min-height: calc(100vh - 264px);
+}
+
+/* General Styling */
+
+h1, h2 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #4aaaa5;
+	padding-bottom: 15px;
+	font-weight: bold;
+	text-align: left;
+  margin-bottom: 30px;
+}
+
+h1 {
+	font-size: 30px;
+	border-bottom: 2px solid #ccc;
+}
+
+h2 {
+	font-size: 22px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+header {
+  background-color: #fff;
+	margin-bottom: 40px;
+	border-bottom: 2px solid #ccc;
+}
+
+#logo {
+	float: left;
+	display: block;
+	text-align: center;
+	background-color: #4aaaa5;
+	color:#fff;
+	font-family: "Georgia";
+	font-size: 30px;
+	padding: 0 40px;
+	line-height: 100px;
+	font-weight: bold;
+  text-decoration: none;
+
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	display: block;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 90px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #999;
+	margin-left: 10px;
+	line-height: 22px;
+	padding-left: 20px;
+	border-left: 1px solid #ddd;
+}
+
+nav ul li:first-child a {
+	border-left: 0;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	clear: both;
+  overflow: hidden;
+  padding-right:15px; 
+}
+
+footer {
+	text-align: center;
+	background-color: #777;
+	color: #ccc;
+	line-height: 70px;
+	margin-top: 40px;
+	border-top:  8px solid #4aaaa5;
+  font-size: 12px;
+  clear: both;
+  }
+
+.module {
+	background-color: #fff;
+	padding: 30px;
+	border: 1px solid #ddd;
+}
+
+#content {
+	float: left;
+  width: 950px;
+}
+
+.pic {
+float: left;	
+}
+
+/* Contact */
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+#contact-list {
+  list-style-type: none;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+/* Portfolio */
+
+.work {
+  position: relative;
+  float: left;
+  width: 200px;
+  margin: 10px;
+	overflow: auto;
+	display: flex;
+}
+
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 10px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+  font-family: "Georgia";
+  font-size: 16px;
+}
+
+/* Hover */
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+header {
+	flex-direction: column;
+	width: 100%;
+	position: static;
+}
+#logo {
+	width: 100% ;
+	display: inline;
+	position: static;
+}
+nav {
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	margin-right: 30px;
+	margin-bottom: -20px;
+	margin-top: -20px;
+}
+nav ul li {
+	flex-grow: initial ;
+	text-align: center;
+	margin-right: 10px;
+}
+.wrapper {
+	width: 100%;
+	display: inline;
+}
+footer {
+	width: 100%;
+	position: sticky;
+}
+.module{
+	width: 100%;
+	margin-top: 10px;
+}
+#content {
+	width: 100%;
+}
+.pic{
+	margin-right: auto;
+	margin-left: 140px;
+	float: none;
+	position: block;
+}
+.work{
+	flex-direction: column;
+  display: block;
+	margin: 10px 60px 10px 80px;
+	width: fit-content;
+}
+.work img {
+	display: block;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+footer {
+	width: 100%;
+}
+#content {
+width: 100% 
+}
+.pic{
+	flex-direction: column;
+}
+.work{
+	margin-left: 15px;
+}
+}
+@media screen and (max-width: 980px) {
+	header {
+		display: flex;
+	}
+	#logo {
+		margin-bottom: 0%;
+	}
+	nav {
+		margin-bottom: 0%;
+		display: inline-flex;
+		padding-left: 50px;
+	}
+	.wrapper {
+		width: 100%;
+	}
+	footer {
+		width: 100%;
+	}
+	.module{
+		float: NONE;
+		margin-top: -10px;
+	}
+	#content {
+		width: 75%;
+		margin-bottom: 200px;
+	}
+	.pic{
+		margin-right: 30PX;
+	}
+	.work{
+		display: block;
+		position: relative;
+		WIDTH: 45%;
+		margin: auto;
+	}
+	
+	}
